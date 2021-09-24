@@ -1,19 +1,13 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using MMT.CustomerAccountDetailsApiClient;
 using MMT.CustomerApiClient.Interfaces;
 using MMT.DbClient;
 using MMT.DbClient.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace MMT.WebApi
 {
@@ -66,14 +60,8 @@ namespace MMT.WebApi
             services.AddSingleton(ConfigurationRoot);
 
             services.AddScoped<ICustomerProvider, CustomerProvider>();
-    //        services.AddScoped<ICustomerProvider>(sp =>
-    //new CustomerProvider(Configuration.GetConnectionString("OrdersDb")));
-
             services.AddScoped<IHttpClientWrapper, HttpClientWrapper>();
             services.AddScoped<IOrderRepo, OrderRepo>();
-
-            //services.AddScoped<IOrderRepo>(sp =>
-            //    new OrderRepo(ConfigurationRoot));
         }
     }
 }
