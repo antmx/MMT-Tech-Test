@@ -1,60 +1,24 @@
 ﻿{
   "customer": {
-    "email": "cat.owner@mmtdigital.co.uk",
-    "customerId": "C34454",
-    "website": true,
     "firstName": "Charlie",
-    "lastName": "Cat",
-    "lastLoggedIn": "2020-11-03T10:22:00",
-    "houseNumber": "1a",
-    "street": "Uppingham Gate",
-    "town": "Uppingham",
-    "postcode": "LE15 9NY",
-    "preferredLanguage": "en-gb"
+    "lastName": "Cat"
   },
   "order": {
-    "orderId": 4,
-    "customerId": "C34454",
+    "orderNumber": 4,
     "orderDate": "2020-09-11T00:00:00",
-    "deliveryExpected": "2021-05-07T00:00:00",
-    "containsGift": false,
-    "shippingMode": "Post",
-    "orderSource": "WEB",
-    "items": [
+    "deliveryAddress": "1a Uppingham Gate, Uppingham, LE15 9NY",
+    "orderItems": [
       {
-        "orderItemId": 5,
-        "orderId": 4,
-        "productId": 15,
+        "product": "'I love my pet' t-shirt",
         "quantity": 1,
-        "price": 12.50,
-        "returnable": false,
-        "product": {
-          "productId": 15,
-          "productName": "'I love my pet' t-shirt",
-          "packHeight": 11.30,
-          "packWidth": 3.20,
-          "packWeight": 0.932,
-          "colour": "Cyan",
-          "size": "XL"
-        }
+        "priceEach": 12.50
       },
       {
-        "orderItemId": 6,
-        "orderId": 4,
-        "productId": 12,
+        "product": "'I love my pet' t-shirt",
         "quantity": 1,
-        "price": 15.99,
-        "returnable": false,
-        "product": {
-          "productId": 12,
-          "productName": "'I love my pet' t-shirt",
-          "packHeight": 11.30,
-          "packWidth": 3.20,
-          "packWeight": 0.932,
-          "colour": "Cyan",
-          "size": "S"
-        }
+        "priceEach": 15.99
       }
     ]
-  }
+  },
+  "deliveryExpected": "2021-05-07T00:00:00"
 }
