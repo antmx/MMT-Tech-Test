@@ -32,8 +32,8 @@ namespace MMT.CustomerAccountDetailsApiClient.Tests
 }"));
 
             var configDic = new Dictionary<string,string> {
-                { "ApiBaseUrl", "https://FAKE-customer-account-details.azurewebsites.net/api/" },
-                { "ApiKey", Guid.NewGuid().ToString() }};
+                { "CustomerDetailsApiBaseUrl", "https://FAKE-customer-account-details.azurewebsites.net/api/" },
+                { "CustomerDetailsApiKey", Guid.NewGuid().ToString() }};
 
             IConfigurationBuilder builder = new ConfigurationBuilder().AddInMemoryCollection(configDic);
 
