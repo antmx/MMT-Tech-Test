@@ -4,6 +4,9 @@
 
 Web API results can be seen in /MMT.WebApi/results.json
 
+Can be tested with this command:
+curl --location --request POST 'https://localhost:44388/Orders/FetchCustomerOrderLatestByEmailAddress?emailAddress=cat.owner@mmtdigital.co.uk'
+
 There are some unit tests around the code that accesses the Customer Account Details API.
 
 I would also have:
