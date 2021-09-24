@@ -2,7 +2,7 @@
 
 # Notes
 
-Results can be seen in /results.json
+Results can be seen in /MMT.WebApi/results.json
 
 There are some unit tests around the code that accesses the Customer Account Details API.
 
