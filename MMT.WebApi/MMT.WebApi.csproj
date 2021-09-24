@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MMT.CustomerAccountDetailsApiClient\MMT.CustomerAccountDetailsApiClient.csproj" />
+    <ProjectReference Include="..\MMT.DbClient\MMT.DbClient.csproj" />
+    <ProjectReference Include="..\MMT.Models\MMT.Models.csproj" />
+  </ItemGroup>
+
+
+</Project>
