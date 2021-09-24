@@ -16,6 +16,7 @@ I would also have:
  - added unit tests around the OrdersController methods.
  - used stored procedures instead of hard-coded SQL.
  - formatted the JSON dates as per the spec
+ - moved the GetInfo aggregation logic out of the OrdersController into a separate injectable class
 
 
 Regards,
